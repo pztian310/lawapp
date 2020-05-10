@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pxxy.lawconsult">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 需要申请的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".config.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/lawconsult_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/lawconsult_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activitys.AdminShowStatuteActivity" />
+        <activity android:name=".AdminChildStatureActivity" />
+        <activity android:name=".activitys.AdminStatuteActivity" />
+        <activity android:name=".activitys.AdminAddCaseActivity" />
+        <activity android:name=".activitys.AdminShowCaseActivity" />
+        <activity android:name=".activitys.AdminCaseActivity" />
+        <activity android:name=".activitys.AdminAddUserActivity" />
+        <activity android:name=".activitys.AdminShowUserMessageActivity" />
+        <activity android:name=".activitys.AdminUserActivity" />
+        <activity android:name=".activitys.AdminActivity" />
+        <activity android:name=".activitys.ClassicCaseActivity" />
+        <activity android:name=".activitys.AlterNickNameActivity"></activity>
+        <activity android:name=".activitys.FansActivity" />
+        <activity android:name=".activitys.AttentionActivity" />
+        <activity android:name=".activitys.ShowCaseActivity" />
+        <activity android:name=".activitys.NoticeActivity" />
+        <activity android:name=".activitys.ReplyActivity" />
+        <activity android:name=".activitys.CaseCollectionActivity" />
+        <activity android:name=".activitys.ConsultEssayActivity" />
+        <activity
+            android:name=".activitys.HomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activitys.FindPasswordActivity" />
+        <activity android:name=".activitys.RegisterActivity" />
+        <activity android:name=".activitys.LoginActivity" />
+        <activity android:name=".activitys.Terms_serviceActivity" />
+        <activity android:name=".activitys.ConsultActivity" />
+        <activity android:name=".activitys.LawyerMainActivity" />
+        <activity android:name=".activitys.IdeaActivity" />
+        <activity android:name=".activitys.RelationActivity" />
+        <activity android:name=".activitys.ChangePasswordActivity" />
+        <activity android:name=".activitys.SettingActivity" />
+        <activity android:name=".activitys.SearchLawyerActivity" />
+        <activity android:name=".activitys.ApplyLawyerActivity" />
+        <activity android:name=".activitys.PublishActivity" />
+        <activity android:name=".activitys.StatutesActivity"/>
+        <activity android:name=".activitys.TextConsultationActivity"/>
+        <activity
+            android:name=".activitys.WelcomeActivity"
+            android:theme="@style/NoTitleAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

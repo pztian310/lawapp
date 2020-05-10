@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical"
+    tools:context=".activitys.AdminStatuteActivity"
+    >
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/admin_stature_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:title_background="@color/theme_color"
+        pxxy:title_center_textView_text="@string/admin_statureActivity_title_center_text"
+        pxxy:title_center_textView_textSize="18sp"
+        pxxy:title_leftButton_resource="@mipmap/terms_servicebreak"
+        pxxy:title_leftButton_visibility="visible"
+        pxxy:title_leftTv_text="@string/admin_case_activity_title_back"
+        pxxy:title_leftTv_textSize="16sp"></com.pxxy.lawconsult.view.CustomTitleView>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/admin_stature_activity_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        pxxy:srlFooterTranslationViewId="@id/classic_case_activity_recyclerview">
+
+        <!--刷新头部-->
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="5dp"
+            android:background="#F2F2F2">
+
+            <RelativeLayout
+                android:id="@+id/admin_stature_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/admin_user_write_bg">
+
+                <ImageView
+                    android:id="@+id/admin_stature_photo"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stature" />
+
+                <TextView
+                    android:id="@+id/admin_stature_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/admin_stature_photo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/admin_stature_photo"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="@string/admin_statureActivity_title"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/admin_stature_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/admin_stature_photo"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/admin_statureActivity_type" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEditText">
+        <attr name="editText_leftTipText" format="string"></attr>
+        <attr name="editText_leftTipTextColor" format="color"></attr>
+        <attr name="editText_leftTipTextSize" format="dimension"></attr>
+        <attr name="editText_centerEditTextHint" format="string"></attr>
+        <attr name="editText_centerEditTextHintColor" format="color"></attr>
+        <attr name="editText_rightClearVisibility">
+            <flag name="visible" value="0"/>
+            <flag name="invisible" value="1"/>
+            <flag name="gone" value="2"/>
+        </attr>
+        <attr name="editText_rightPasswordVisibility">
+            <flag name="visible" value="0"/>
+            <flag name="invisible" value="1"/>
+            <flag name="gone" value="2"/>
+        </attr>
+        <attr name="editText_buttomLineColor" format="color"></attr>
+        <attr name="editText_inputType">
+            <flag name="phone" value="0"></flag>
+            <flag name="password" value="1"></flag>
+            <flag name="text" value="2"></flag>
+            <flag name="number" value="3"></flag>
+        </attr>
+    </declare-styleable>
+</resources>

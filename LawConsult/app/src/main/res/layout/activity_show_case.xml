@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.ShowCaseActivity">
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/show_case_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:title_background="@color/theme_color"
+        pxxy:title_center_textView_text="@string/show_case_title_center_tv"
+        pxxy:title_center_textView_textSize="18sp"
+        pxxy:title_leftButton_resource="@mipmap/terms_servicebreak"
+        pxxy:title_leftButton_visibility="visible"
+        pxxy:title_leftTv_text="@string/show_case_title_left_tv"
+        pxxy:title_rightButton_resource="@drawable/show_case_collect"
+        pxxy:title_leftTv_textSize="16sp"></com.pxxy.lawconsult.view.CustomTitleView>
+
+    <WebView
+        android:id="@+id/show_case_activity_webview"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"></WebView>
+</LinearLayout>

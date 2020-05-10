@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.AdminActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/d">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/admin_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/head_photo" />
+
+        <ImageButton
+            android:id="@+id/admin_setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/admin_exit" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FDFDFD" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--用户管理-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View style="@style/AppTheme.Divison" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="18dp"
+                        android:background="@color/theme_color" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/admin_activity_user_title"
+                        android:textColor="@color/theme_color" />
+                </LinearLayout>
+
+                <View style="@style/AppTheme.Divison" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/admin_clientuser"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableTop="@drawable/admin_clientuser"
+                        android:text="@string/admin_activity_client_user_text"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/admin_lawyeruser"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableTop="@drawable/admin_laweruser"
+                        android:text="@string/admin_activity_lawyer_user_text"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/admin_add_user"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableTop="@drawable/admin_add_user"
+                        android:text="@string/admin_activity_add_user_text"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+
+                <!--案例管理-->
+                <View style="@style/AppTheme.Divison" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="18dp"
+                        android:background="@color/theme_color" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/admin_activity_case_title"
+                        android:textColor="@color/theme_color" />
+                </LinearLayout>
+
+                <View style="@style/AppTheme.Divison" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/admin_case"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableTop="@drawable/admin_case"
+                        android:text="@string/admin_activity_case_text"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/admin_add_case"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableTop="@drawable/admin_add_case"
+                        android:text="@string/admin_activity_add_case_text"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+
+                <!--法条管理-->
+
+                <View style="@style/AppTheme.Divison" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="18dp"
+                        android:background="@color/theme_color" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/admin_activity_law_title"
+                        android:textColor="@color/theme_color" />
+                </LinearLayout>
+
+                <View style="@style/AppTheme.Divison" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/admin_law"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableTop="@drawable/admin_add_law"
+                        android:text="@string/admin_activity_law_text"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

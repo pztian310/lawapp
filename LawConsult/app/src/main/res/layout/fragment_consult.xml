@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/fragment_consult_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:title_background="@color/theme_color"
+        pxxy:title_center_textView_text="@string/fragment_consult_title_centerText"
+        pxxy:title_center_textView_textSize="20sp"
+        pxxy:title_leftButton_visibility="invisible"
+        pxxy:title_left_circleImage_visibility="visible"
+        pxxy:title_rightButton_resource="@drawable/fabu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fragment_consult_iv_top"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zixunbg" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:background="#ffffff"
+                android:columnCount="4"
+                android:rowCount="2">
+
+                <!--婚姻家庭-->
+                <Button
+                    android:id="@+id/fragment_consult_bt_hy"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:drawableTop="@drawable/hunyin"
+                    android:drawablePadding="-10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/fragment_consult_bt_hunyin" />
+                <!--房产纠纷-->
+                <Button
+                    android:id="@+id/fragment_consult_bt_fc"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:drawableTop="@drawable/fangchan"
+                    android:drawablePadding="-10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/fragment_consult_bt_fangchan" />
+                <!--工伤赔偿-->
+                <Button
+                    android:id="@+id/fragment_consult_bt_gs"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:drawableTop="@drawable/gongshang"
+                    android:drawablePadding="-10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/fragment_consult_bt_gongshang" />
+                <!--交通事故-->
+                <Button
+                    android:id="@+id/fragment_consult_bt_jt"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:drawableTop="@drawable/jiaotong"
+                    android:drawablePadding="-10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/fragment_consult_bt_jiaotong" />
+                <!--民间借贷-->
+                <Button
+                    android:id="@+id/fragment_consult_bt_mj"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:drawableTop="@drawable/jiedai"
+                    android:drawablePadding="-10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/fragment_consult_bt_minjian" />
+                <!--劳动纠纷-->
+                <Button
+                    android:id="@+id/fragment_consult_bt_ld"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:drawableTop="@drawable/laodong"
+                    android:drawablePadding="-10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/fragment_consult_bt_laodong" />
+                <!--刑事诉讼-->
+                <Button
+                    android:id="@+id/fragment_consult_bt_xs"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:drawableTop="@drawable/xingshi"
+                    android:drawablePadding="-10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/fragment_consult_bt_xingshi" />
+                <!--知识产权-->
+                <Button
+                    android:id="@+id/fragment_consult_bt_zs"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:drawableTop="@drawable/zhishi"
+                    android:drawablePadding="-10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/fragment_consult_bt_zhishi" />
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <!--打电话给律师-->
+                <ImageButton
+                    android:id="@+id/fragment_consult_ibt_call"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/lvshizhuanxian"/>
+                <!--立即咨询-->
+                <ImageButton
+                    android:id="@+id/fragment_consult_ibt_talk"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/zaixianlvshi"/>
+
+            </LinearLayout>
+            <!--用户评价律师-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="#cccccc"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:background="#ffffff"
+                android:gravity="center|left"
+                android:textSize="16sp"
+                android:text="@string/fragment_consult_tx_evaluate" />
+            <View
+                android:layout_width="match_parent"
+
+                android:layout_height="0.5dp"
+                android:background="#cccccc"
+                />
+            <!--用户评价用时间再写-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:background="#ffffff"
+                android:src="@drawable/evaluate"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

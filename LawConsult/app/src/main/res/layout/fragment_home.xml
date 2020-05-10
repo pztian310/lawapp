@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/fragment_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:title_background="@color/theme_color"
+        pxxy:title_center_textView_text="@string/fragment_home_title_centerText"
+        pxxy:title_center_textView_textSize="20sp"
+        pxxy:title_leftButton_visibility="invisible"
+        ></com.pxxy.lawconsult.view.CustomTitleView>
+    <!--srlFooterTranslationViewId:指定上拉Footer时偏移的视图Id-->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fragment_home_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        pxxy:srlFooterTranslationViewId="@id/fragment_home_recycler">
+
+
+        <!--刷新头部-->
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <!--recyclerview放在最低层，保证不把appbar顶出屏幕-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_home_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                pxxy:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v7.widget.RecyclerView>
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                pxxy:elevation="0dp">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    pxxy:layout_scrollFlags="scroll">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/fragment_home_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        pxxy:indicator_height="5dp"
+                        pxxy:indicator_margin="5dp"
+                        pxxy:indicator_width="5dp"
+                        pxxy:layout_collapseMode="parallax"></com.youth.banner.Banner>
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="-8dp"
+                    android:clickable="true"
+                    pxxy:layout_scrollFlags="scroll">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="142dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/fragment_home_center_background"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/fragment_home_bt_fastconsult_notice"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:drawableTop="@mipmap/notice"
+                                android:drawablePadding="5dp"
+                                android:scaleType="centerInside"
+                                android:text="@string/fragment_home_notice_text"
+                                android:textColor="#FFFFFF" />
+
+                            <Button
+                                android:id="@+id/fragment_home_bt_fastconsult_classiccase"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:drawableTop="@mipmap/classic_case"
+                                android:drawablePadding="5dp"
+                                android:scaleType="centerInside"
+                                android:text="@string/fragment_home_case_text"
+                                android:textColor="#FFFFFF" />
+
+                            <Button
+                                android:id="@+id/fragment_home_bt_fastconsult_search"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:drawableTop="@mipmap/query"
+                                android:drawablePadding="5dp"
+                                android:scaleType="centerInside"
+                                android:text="@string/fragment_home_search_text"
+                                android:textColor="#FFFFFF" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_home_fastconsultlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/fragment_home_write_background"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/fragment_home_fastconsult_iv"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:padding="10dp"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/fast_consult" />
+
+                            <TextView
+                                android:id="@+id/fragment_home_fastconsult_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_toRightOf="@id/fragment_home_fastconsult_iv"
+                                android:text="@string/fragment_home_fastconsult_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/fragment_home_fastconsult_tv"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@id/fragment_home_fastconsult_iv"
+                                android:text="@string/fragment_home_fastconsult_bottom"
+                                android:textColor="#cccccc"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:id="@+id/fastconsult_bt"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/fragment_home_fastconsult_button"
+                                android:text="@string/fragment_home_fastconsult_button_text"
+                                android:textColor="#FFFFFF" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    pxxy:layout_scrollFlags="scroll" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    pxxy:layout_collapseMode="pin"
+                    pxxy:layout_scrollFlags="exitUntilCollapsed|enterAlways|enterAlwaysCollapsed">
+
+                    <View style="@style/AppTheme.Divison" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="18dp"
+                            android:background="@color/theme_color" />
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/fragment_home_case_title"
+                            android:textColor="@color/theme_color" />
+
+                    </LinearLayout>
+
+                    <View style="@style/AppTheme.Divison" />
+                </LinearLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            pxxy:srlAnimatingColor="@color/theme_color" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

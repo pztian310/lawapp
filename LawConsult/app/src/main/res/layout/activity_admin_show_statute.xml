@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/admin_user_bg"
+    android:orientation="vertical"
+    tools:context=".activitys.AdminShowStatuteActivity">
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/admin_show_statute_activity_titleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:title_background="@color/theme_color"
+        pxxy:title_center_textView_textSize="18sp"
+        pxxy:title_leftButton_resource="@mipmap/terms_servicebreak"
+        pxxy:title_leftButton_visibility="visible"
+        pxxy:title_leftTv_text="@string/show_case_title_left_tv"
+        pxxy:title_leftTv_textSize="16sp"></com.pxxy.lawconsult.view.CustomTitleView>
+
+    <Space style="@style/space" />
+
+    <include
+        android:id="@+id/admin_show_statute_activity_id"
+        layout="@layout/show_statute_message_entry"></include>
+
+    <Space style="@style/space" />
+
+    <include
+        android:id="@+id/admin_show_statute_activity_title"
+        layout="@layout/show_statute_message_entry"></include>
+
+    <View style="@style/AppTheme.Divison" />
+
+    <include
+        android:id="@+id/admin_show_statute_activity_type"
+        layout="@layout/show_statute_message_entry"></include>
+
+    <Space style="@style/space" />
+
+    <include
+        android:id="@+id/admin_show_statute_activity_opendate"
+        layout="@layout/show_statute_message_entry"></include>
+
+    <View style="@style/AppTheme.Divison" />
+
+    <include
+        android:id="@+id/admin_show_statute_activity_content"
+        layout="@layout/show_statute_message_entry"
+        ></include>
+</LinearLayout>

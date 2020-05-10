@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.AdminAddUserActivity">
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/admin_add_user_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:title_background="@color/theme_color"
+        pxxy:title_center_textView_text="添加用户"
+        pxxy:title_center_textView_textSize="18sp"
+        pxxy:title_leftButton_resource="@mipmap/terms_servicebreak"
+        pxxy:title_leftButton_visibility="visible"
+        pxxy:title_leftTv_text="@string/show_case_title_left_tv"
+        pxxy:title_leftTv_textSize="16sp"></com.pxxy.lawconsult.view.CustomTitleView>
+
+    <com.pxxy.lawconsult.view.CustomEditText
+        android:id="@+id/admin_add_user_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_leftAndRight_margin"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="@dimen/login_leftAndRight_margin"
+        pxxy:editText_centerEditTextHint="@string/admin_add_user_userName_hint"
+        pxxy:editText_leftTipText="@string/admin_add_user_userName_tip"
+        pxxy:editText_leftTipTextSize="20sp"></com.pxxy.lawconsult.view.CustomEditText>
+
+    <com.pxxy.lawconsult.view.CustomEditText
+        android:id="@+id/admin_add_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_leftAndRight_margin"
+        pxxy:editText_inputType="password"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/login_leftAndRight_margin"
+        pxxy:editText_centerEditTextHint="@string/admin_add_user_password_hint"
+        pxxy:editText_leftTipText="@string/admin_add_user_password_tip"
+        pxxy:editText_leftTipTextSize="20sp"></com.pxxy.lawconsult.view.CustomEditText>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_leftAndRight_margin"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/login_leftAndRight_margin"
+        android:background="@drawable/loign_activity_login_button"
+        android:minHeight="40dp"
+        android:onClick="addUser"
+        android:text="@string/admin_add_user_Button_text"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

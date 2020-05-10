@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activitys.RelationActivity">
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/activity_relation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_leftButton_resource="@mipmap/terms_servicebreak"
+        app:title_center_textView_text="联系客服"
+        app:title_center_textView_textSize="20dp"
+        app:title_background="#25c4fc"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/service"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="联系客户 解决问题"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="18sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:text="立即联系"
+        android:background="@drawable/loign_activity_login_button"
+        android:minHeight="40dp"
+        android:textColor="@color/white"
+        android:onClick="relation"/>
+</LinearLayout>

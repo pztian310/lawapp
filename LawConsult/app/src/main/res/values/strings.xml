@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">法律咨询</string>
+
+    <!--register注册页面-->
+    <string name="register_bt_back">返回</string>
+    <string name="register_tv_phone">手机号</string>
+    <string name="register_et_phone">请输入手机号</string>
+    <string name="register_tv_verifi">验证码</string>
+    <string name="register_et_verifi">请输入验证码</string>
+    <string name="register_bt_verifi">获取验证码</string>
+    <string name="register_tv_password">密&#160;&#160;&#160;&#160;码</string>
+    <string name="register_et_password">请输入密码</string>
+    <string name="register_bt_reg">注册</string>
+
+    <!--homeActivity-->
+    <string name="home_rb_home_text">主页</string>
+    <string name="home_rb_consult_text">咨询</string>
+    <string name="home_rb_lawyer_text">律师</string>
+    <string name="home_rb_mine_text">我的</string>
+
+    <!--FindPasswordActivity-->
+    <string name="findpwd_bt_back">返回</string>
+    <string name="findpwd_tv_phone">手机号</string>
+    <string name="findpwd_et_phone_hint">请输入手机号</string>
+    <string name="findpwd_tv_verifi">验证码</string>
+    <string name="findpwd_et_verifi_hint">请输入验证码</string>
+    <string name="findpwd_bt_getverifi">获取验证码</string>
+    <string name="findpwd_tv_newpwd">新密码</string>
+    <string name="findpwd_et_password_hint">请输入新密码</string>
+    <string name="findpwd_bt_findpwd">找回密码</string>
+
+    <!-- loginActivity -->
+    <string name="login_userName_tip">账号</string>
+    <string name="login_userName_hint">手机号/邮箱</string>
+    <string name="login_password_tip">密码</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_loginButton_text">登&#160;录</string>
+    <string name="login_left_forgetPassword">忘记密码?</string>
+    <string name="login_right_register">新用户注册</string>
+    <string name="login_bottom_terms_text">登录即代表阅读并同意服务条款</string>
+    <string name="login_dialog_loading">登录中...</string>
+
+    <!--Terms_serviceActivity-->
+    <string name="Terms_serviceActivity_title">法律与咨询服务与条款</string>
+    <string name="Terms_serviceActivity_back">返回</string>
+    <!--consultActivity-->
+    <string name="consult_title">我要咨询</string>
+    <string name="consult_tv_sort">问题分类</string>
+    <string name="consult_tv_lawtype">婚姻家庭</string>
+    <string name="consult_et_inputcontent_hint">请详细的描述您遇到的困难，以便得到律师的专业建议，请注意保护个人隐私，不要透露真实姓名</string>
+    <string name="consult_bt_submit">发布</string>
+    <!--fragmentMine布局页面-->
+    <string name="fragment_tv_nickname">聿言</string>
+    <string name="fragment_tv_signature">这个家伙很优秀 什么都要留下</string>
+
+    <!--fragmentlawyer-->
+    <string name="fragment_lawer_title">律师</string>
+
+
+    <!-- fragmentHome-->
+    <string name="fragment_home_title_centerText">首页</string>
+    <string name="fragment_home_fastconsult_text">快速咨询</string>
+    <string name="fragment_home_fastconsult_bottom">1秒应答，快捷专业</string>
+    <string name="fragment_home_fastconsult_button_text">立即发布</string>
+    <string name="fragment_home_notice_text">通知公告</string>
+    <string name="fragment_home_case_text">经典案例</string>
+    <string name="fragment_home_search_text">搜索</string>
+    <string name="fragment_home_case_title">案例分析</string>
+
+
+    <!--adapterlawyer-->
+    <string name="adapter_lawyername">杨优秀</string>
+    <string name="adapter_lawyeroffice">优秀律师事务所</string>
+    <string name="adapter_lawyercase1">家庭婚姻</string>
+    <string name="adapter_lawyercase2">刑事</string>
+    <string name="adapter_lawyercase3">商事</string>
+    <string name="fragment_lawyer_title">律师</string>
+    <string name="adapter_lawyerposition">江西省 萍乡市</string>
+    <string name="adapter_lawyeryear">任职6年</string>
+
+
+    <!--fragmentConsult-->
+    <string name="fragment_consult_title_centerText">咨询</string>
+    <string name="fragment_consult_bt_hunyin">婚姻家庭</string>
+    <string name="fragment_consult_bt_fangchan">房产纠纷</string>
+    <string name="fragment_consult_bt_gongshang">工伤赔偿</string>
+    <string name="fragment_consult_bt_jiaotong">交通事故</string>
+    <string name="fragment_consult_bt_minjian">民间借贷</string>
+    <string name="fragment_consult_bt_laodong">劳动纠纷</string>
+    <string name="fragment_consult_bt_xingshi">刑事诉讼</string>
+    <string name="fragment_consult_bt_zhishi">知识产权</string>
+    <string name="fragment_consult_tx_evaluate">用户评价</string>
+    <!--ChangePassword-->
+    <string name="changepwd_tv_phone">旧密码</string>
+    <string name="changepwd_et_phone_hint">请输入旧密码</string>
+    <string name="changepwd_bt_back">返回</string>
+    <string name="changepwd_tv_newpwd">新密码</string>
+    <string name="changepwd_et_password_hint">请输入新密码</string>
+    <string name="changepwd_tv_title">修改密码</string>
+    <string name="changedpwd_bt_findpwd">提交</string>
+
+    <!--naticeActivity-->
+    <string name="natice_title_left_tv">返回</string>
+    <string name="natice_title_center_tv">通知公告</string>
+
+    <!-- showCaseActivity-->
+    <string name="show_case_title_left_tv">返回</string>
+    <string name="show_case_title_center_tv">案例详情</string>
+
+    <!-- classicCaseActivity -->
+    <string name="classic_CaseActivity_title_center_tv">经典案例</string>
+
+
+    <string name="classicCase_activity_not_internet">网络连接错误，请检查网络!</string>
+
+    <!--AdminActivity-->
+    <string name="admin_activity_user_title">用户管理</string>
+    <string name="admin_activity_case_title">案例管理</string>
+    <string name="admin_activity_law_title">法条管理</string>
+    <string name="admin_activity_client_user_text">客户管理</string>
+    <string name="admin_activity_lawyer_user_text">律师管理</string>
+    <string name="admin_activity_add_user_text">添加用户</string>
+    <string name="admin_activity_case_text">案例管理</string>
+    <string name="admin_activity_add_case_text">添加案例</string>
+    <string name="admin_activity_law_text">法条管理</string>
+    <string name="admin_activity_add_law_text">法条统计</string>
+
+    <!--adminAddUserAcitivity-->
+    <string name="admin_add_user_userName_tip">账号</string>
+    <string name="admin_add_user_userName_hint">手机号/邮箱</string>
+    <string name="admin_add_user_password_tip">密码</string>
+    <string name="admin_add_user_password_hint">请输入密码</string>
+    <string name="admin_add_user_Button_text">添&#160;加</string>
+
+    <!--adminCaseActivity-->
+    <string name="admin_case_activity_title_back">返回</string>
+    <string name="admin_case_activity_title_center">案例管理</string>
+
+    <!--adminShowCaseActivity-->
+    <string name="admin_show_case_activity_title_center">案例详情</string>
+
+    <!--adminAddCase-->
+    <string name="admin_case_add_case_activity_title_left">返回</string>
+    <string name="admin_case_add_case_activity_title_center">添加案例</string>
+
+    <!--adminStatureActivity-->
+    <string name="admin_statureActivity_title">中华人民共和国刑法（1997年修订）</string>
+    <string name="admin_statureActivity_title_center_text">法条管理</string>
+    <string name="admin_statureActivity_type">刑法</string>
+
+    <!--adminChildStatureActivity-->
+    <string name="admin_clild_stature_activity_title_center">中华人民共和国刑法（1997年修订）</string>
+
+    <!--adminAddStatureAcitvity-->
+    <string name="admin_statute_add_statute_title_cneter">添加法条</string>
+</resources>

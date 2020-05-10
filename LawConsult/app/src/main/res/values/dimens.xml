@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_linearLayout_height"></dimen>
+    <dimen name="login_leftAndRight_margin">25dp</dimen>
+    <dimen name="button_minHeight">40dp</dimen>
+</resources>

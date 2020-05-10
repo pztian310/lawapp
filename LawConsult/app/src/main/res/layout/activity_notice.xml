@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.NoticeActivity"
+    android:background="@color/admin_user_bg"
+    android:orientation="vertical"
+    >
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/notice_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:title_background="@color/theme_color"
+        pxxy:title_center_textView_text="@string/natice_title_center_tv"
+        pxxy:title_center_textView_textSize="18sp"
+        pxxy:title_leftButton_resource="@mipmap/terms_servicebreak"
+        pxxy:title_leftButton_visibility="visible"
+        pxxy:title_leftTv_text="@string/natice_title_left_tv"
+        pxxy:title_leftTv_textSize="16sp"></com.pxxy.lawconsult.view.CustomTitleView>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/notice_activity_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        pxxy:srlFooterTranslationViewId="@id/notice_activity_recyclerview">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.scwang.smartrefresh.header.MaterialHeader>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/notice_activity_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            pxxy:srlAnimatingColor="@color/theme_color" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

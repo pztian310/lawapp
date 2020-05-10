@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/admin_user_bg"
+    android:orientation="vertical"
+    tools:context=".activitys.AdminShowUserMessageActivity">
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/admin_show_user_message_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:title_background="@color/theme_color"
+        pxxy:title_center_textView_textSize="18sp"
+        pxxy:title_leftButton_resource="@mipmap/terms_servicebreak"
+        pxxy:title_leftButton_visibility="visible"
+        pxxy:title_leftTv_text="@string/show_case_title_left_tv"
+        pxxy:title_leftTv_textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/admin_user_bg"
+            android:orientation="vertical">
+
+            <!--用户基本信息-->
+            <Space style="@style/space" />
+
+            <include
+                android:id="@+id/admin_show_user_basic_message_1"
+                layout="@layout/show_user_message_entry" />
+
+            <Space style="@style/space" />
+
+            <include
+                android:id="@+id/admin_show_user_basic_message_2"
+                layout="@layout/show_user_message_entry" />
+
+            <include
+                android:id="@+id/admin_show_user_basic_message_3"
+                layout="@layout/show_user_message_entry" />
+
+            <View style="@style/AppTheme.Divison" />
+
+            <include
+                android:id="@+id/admin_show_user_basic_message_4"
+                layout="@layout/show_user_message_entry" />
+
+            <Space style="@style/space" />
+
+            <include
+                android:id="@+id/admin_show_user_basic_message_5"
+                layout="@layout/show_user_message_entry" />
+
+            <Space style="@style/space" />
+
+            <!--用户具体信息-->
+
+            <include
+                android:id="@+id/admin_show_user_message_6"
+                layout="@layout/show_user_message_entry" />
+
+            <View style="@style/AppTheme.Divison" />
+
+            <include
+                android:id="@+id/admin_show_user_message_7"
+                layout="@layout/show_user_message_entry" />
+
+            <View style="@style/AppTheme.Divison" />
+
+            <include
+                android:id="@+id/admin_show_user_message_8"
+                layout="@layout/show_user_message_entry" />
+
+            <View style="@style/AppTheme.Divison" />
+
+            <include
+                android:id="@+id/admin_show_user_message_9"
+                layout="@layout/show_user_message_entry" />
+
+            <View style="@style/AppTheme.Divison" />
+
+            <include
+                android:id="@+id/admin_show_user_message_10"
+                layout="@layout/show_user_message_entry" />
+
+            <Space style="@style/space" />
+
+            <LinearLayout
+                android:id="@+id/admin_show_user_lawyer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/admin_show_user_message_11"
+                    layout="@layout/show_user_message_entry" />
+
+                <View style="@style/AppTheme.Divison" />
+
+                <include
+                    android:id="@+id/admin_show_user_message_12"
+                    layout="@layout/show_user_message_entry" />
+
+                <View style="@style/AppTheme.Divison" />
+
+                <include
+                    android:id="@+id/admin_show_user_message_13"
+                    layout="@layout/show_user_message_entry" />
+
+                <View style="@style/AppTheme.Divison" />
+
+                <include
+                    android:id="@+id/admin_show_user_message_14"
+                    layout="@layout/show_user_message_entry" />
+
+                <View style="@style/AppTheme.Divison" />
+
+                <Space style="@style/space" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

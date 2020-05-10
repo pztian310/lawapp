@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.FansActivity">
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/activity_fans_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_background="#25c4fc"
+        app:title_center_textView_text="粉丝"
+        app:title_leftButton_resource="@mipmap/terms_servicebreak"
+        app:title_center_textView_textSize="20sp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/evaluate5"/>
+    <ListView
+        android:id="@+id/activity_lv_fans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

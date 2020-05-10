@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8FF"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.pxxy.lawconsult.view.CustomTitleView
+            android:id="@+id/textconsultation_customtitleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            pxxy:title_background="#25c4fc"
+            pxxy:title_leftButton_resource="@mipmap/terms_servicebreak"
+            pxxy:title_leftTv_text="图文咨询"
+            pxxy:title_leftTv_textSize="20sp" />
+
+        <EditText
+            android:id="@+id/textconsultation_ed"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#FFFFFF"
+
+            android:enabled="true"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:minLines="8"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:hint="输入你的问题，完成后将通知律师与你对话。" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:onClick="lawTypeDialog">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="@string/consult_tv_sort"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textconsultation_tv_lawtype"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/consultactivity_textview_border"
+                android:gravity="center"
+                android:text="@string/consult_tv_lawtype"
+                android:textColor="#25c4fc"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="49dp"
+                android:background="#ffffff" />
+
+            <TextView
+                android:layout_width="34dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/fanhui" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        >
+        <Button
+            android:id="@+id/textconsultation_bt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:minHeight="40dp"
+            android:background="@drawable/loign_activity_login_button"
+            android:text="免费发起咨询"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

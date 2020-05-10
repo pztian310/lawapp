@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F2F2F2"
+    android:layout_height="140dp">
+
+    <RelativeLayout
+        android:id="@+id/admin_show_case_layout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/admin_user_write_bg"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/admin_show_case_photo"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/d"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/admin_show_case_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/admin_show_case_photo"
+            android:text="17679230487"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="20sp"
+            android:layout_alignTop="@id/admin_show_case_photo"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/admin_show_case_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/admin_show_case_title"
+            android:layout_toRightOf="@id/admin_show_case_photo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+
+        <Button
+            android:id="@+id/admin_show_case_bt_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/admin_show_case_bt_delete"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:minHeight="35dp"
+            android:background="@drawable/admin_user_button_bg"
+            />
+
+        <Button
+            android:id="@+id/admin_show_case_bt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:minHeight="35dp"
+            android:textColor="#FF0000"
+            android:background="@drawable/admin_user_button_red_bg"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

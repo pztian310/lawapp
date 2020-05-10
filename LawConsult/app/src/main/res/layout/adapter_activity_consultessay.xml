@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/consult_essay_photo_avatar"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="5dp"
+    android:src="@drawable/c"
+    />
+
+    <TextView
+        android:id="@+id/consult_essay_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/consult_essay_photo_avatar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:text="悠忙544"
+        />
+    <TextView
+        android:id="@+id/consult_essay_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="4月10日 10:22"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:id="@+id/consult_essay_tv_consultcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/consult_essay_tv_name"
+        android:layout_toRightOf="@+id/consult_essay_photo_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="如果法院预查封的被告商品房还没有办下房产证来，而且该放还有银行按借贷款还没有还清，请问法院如何拍卖该房屋？非要等到房产证发下来才能拍卖吗？"/>
+
+    <TextView
+        android:id="@+id/consult_essay_tv_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/consult_essay_tv_consultcontent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:text="回复" />
+</RelativeLayout>

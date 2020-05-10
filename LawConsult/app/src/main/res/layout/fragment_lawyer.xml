@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ededed"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/fragment_lawyer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:title_left_circleImage_visibility="visible"
+        pxxy:title_background="#25c4fc"
+        pxxy:title_center_textView_text="@string/fragment_lawyer_title"
+        pxxy:title_center_textView_textColor="#ffffff"
+        pxxy:title_center_textView_textSize="20sp"
+        >
+    </com.pxxy.lawconsult.view.CustomTitleView>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fragment_lawyer_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnablePreviewInEditMode="true"
+        >
+
+        <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+        <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:id="@+id/fragment_lawyer_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </ListView>
+        <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:srlAnimatingColor="@color/theme_color"
+        />
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.ConsultEssayActivity">
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/activity_consult_essay_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title_background="#25c4fc"
+        app:title_center_textView_text="婚姻家庭"
+        app:title_center_textView_textSize="20sp"
+        app:title_leftButton_resource="@drawable/app_title_back" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/activity_consult_essay_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnablePreviewInEditMode="true">
+        <!--srlAccentColor srlPrimaryColor 将会改变 Header 和 Footer 的主题颜色-->
+        <!--srlEnablePreviewInEditMode 可以开启和关闭预览功能-->
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:id="@+id/consult_essay_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/activity_consult_essay_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+            <ProgressBar
+                android:id="@+id/activity_consult_essay_progress1"
+                style="@android:style/Widget.ProgressBar.Large"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:progressDrawable="@drawable/loign_activity_login_button"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/activity_consult_essay_loadtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="玩命加载中....."
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/activity_consult_essay_progress1"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAnimatingColor="@color/theme_color" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

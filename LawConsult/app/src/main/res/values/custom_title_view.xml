@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTitleView">
+        <attr name="title_background" format="color|reference"></attr>
+        <attr name="title_leftButton_resource" format="reference"></attr>
+        <attr name="title_leftButton_visibility" >
+            <flag name="visible" value="0"/>
+            <flag name="invisible" value="1"/>
+            <flag name="gone" value="2"/>
+        </attr>
+        <attr name="title_left_circleImage_resource" format="reference"></attr>
+        <attr name="title_left_circleImage_visibility">
+            <flag name="visible" value="0"/>
+            <flag name="invisible" value="1"/>
+            <flag name="gone" value="2"/>
+        </attr>
+        <attr name="title_center_textView_text" format="string"></attr>
+        <attr name="title_center_textView_textColor" format="color"></attr>
+        <attr name="title_center_textView_textSize" format="dimension"></attr>
+        <attr name="title_center_textView_visibility">
+            <flag name="visible" value="0"/>
+            <flag name="invisible" value="1"/>
+            <flag name="gone" value="2"/>
+        </attr>
+        <attr name="title_rightButton_resource" format="reference"></attr>
+        <attr name="title_rightButton_visibility">
+            <flag name="visible" value="0"/>
+            <flag name="invisible" value="1"/>
+            <flag name="gone" value="2"/>
+        </attr>
+        <attr name="title_leftTv_text" format="string"></attr>
+        <attr name="title_leftTv_textColor" format="color"></attr>
+        <attr name="title_leftTv_textSize" format="dimension"></attr>
+    </declare-styleable>
+    
+</resources>

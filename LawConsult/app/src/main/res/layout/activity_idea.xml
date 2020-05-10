@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.IdeaActivity">
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/idea_bt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_background="#25c4fc"
+        app:title_leftButton_resource="@drawable/app_title_back"
+        app:title_center_textView_text="我要反馈"
+        app:title_center_textView_textSize="20sp"/>
+    <EditText
+        android:id="@+id/idea_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:enabled="true"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:hint="请详细描述您在使用该软件时遇到的问题，及时向我们反馈，我们将努力解决问题，营造更好的用户体验"
+        android:inputType="textMultiLine"
+        android:maxLines="8"
+        android:minLines="8"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textCursorDrawable="@drawable/cursorcolor" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        />
+
+    <Button
+        android:id="@+id/idea_bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/loign_activity_login_button"
+        android:minHeight="40dp"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:textSize="18dp" />
+</LinearLayout>

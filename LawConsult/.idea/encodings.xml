@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+<<<<<<< HEAD
+    <file url="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/emulator-5554/data/data/com.pxxy.lawconsult/databases/lawConsult.db" charset="GBK" />
+=======
+    <file url="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-nexus-127.0.0.1_62001/data/data/com.pxxy.lawconsult/databases/lawConsult.db" charset="ISO-8859-1" />
+    <file url="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-nexus-127.0.0.1_62001/data/data/com.pxxy.lawconsult/databases/lawConsult.db" charset="UTF-16" />
+>>>>>>> 1f2d2f15b45a57ece5a38cb51d17644e8b9ad77c
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/lawserver.txt" charset="GBK" />
+  </component>
+</project>

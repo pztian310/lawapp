@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/admin_user_bg"
+    android:orientation="vertical"
+    tools:context=".activitys.AdminAddCaseActivity">
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/admin_add_case_titleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pxxy:title_background="@color/theme_color"
+        pxxy:title_center_textView_text="@string/admin_case_add_case_activity_title_center"
+        pxxy:title_center_textView_textSize="18sp"
+        pxxy:title_leftButton_resource="@drawable/close"
+        pxxy:title_leftButton_visibility="visible"
+        pxxy:title_leftTv_textSize="16sp"
+        pxxy:title_rightButton_resource="@drawable/check"
+        pxxy:title_rightButton_visibility="visible"></com.pxxy.lawconsult.view.CustomTitleView>
+
+    <Space style="@style/space" />
+
+    <include
+        android:id="@+id/admin_add_case_title"
+        layout="@layout/add_case_message_entry" />
+
+    <Space style="@style/space" />
+
+    <include
+        android:id="@+id/admin_add_case_type"
+        layout="@layout/add_case_message_entry" />
+
+    <View style="@style/AppTheme.Divison" />
+
+    <include
+        android:id="@+id/admin_add_case_image"
+        layout="@layout/add_case_message_entry" />
+
+    <View style="@style/AppTheme.Divison" />
+
+    <include
+        android:id="@+id/admin_add_case_content"
+        layout="@layout/add_case_message_entry" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="statute">
+      <item>按内容查询</item>
+      <item>按类型查询</item>
+   </string-array>
+</resources>

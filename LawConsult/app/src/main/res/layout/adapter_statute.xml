@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+    <TextView
+        android:id="@+id/tv_law_id"
+        android:layout_width="26dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="56dp"
+        android:text="1"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/tv_law_title"
+        android:layout_width="293dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="中华人民共和国刑法（1997年修订)" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/tv_law_content"
+        android:layout_width="293dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="第一条　【立法目的】为了惩罚犯罪，保护人民，根据宪法，结合我国同犯罪作斗争的具体经验及实际情况，制定本法。" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_law_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刑法" />
+        <TextView
+        android:id="@+id/textView5"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+            android:layout_marginLeft="70dp"
+        android:text="制定时间：" />
+        <TextView
+            android:id="@+id/tv_law_opendata"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="1997-03-14" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.LoginActivity"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/login_ig_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/lawconsult_icon" />
+
+    <com.pxxy.lawconsult.view.CustomEditText
+        android:id="@+id/login_et_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_leftAndRight_margin"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/login_leftAndRight_margin"
+        pxxy:editText_centerEditTextHint="@string/login_userName_hint"
+        pxxy:editText_leftTipText="@string/login_userName_tip"
+        pxxy:editText_leftTipTextSize="20sp"></com.pxxy.lawconsult.view.CustomEditText>
+
+    <com.pxxy.lawconsult.view.CustomEditText
+        android:id="@+id/login_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_leftAndRight_margin"
+        android:layout_marginRight="@dimen/login_leftAndRight_margin"
+        pxxy:editText_centerEditTextHint="@string/login_password_hint"
+        pxxy:editText_inputType="password"
+        pxxy:editText_leftTipText="@string/login_password_tip"
+        pxxy:editText_leftTipTextSize="20sp"></com.pxxy.lawconsult.view.CustomEditText>
+
+    <!--style="?android:attr/borderlessButtonStyle" 去除按钮点击阴影-->
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_leftAndRight_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/login_leftAndRight_margin"
+        android:background="@drawable/loign_activity_login_button"
+        android:minHeight="40dp"
+        android:onClick="login"
+        android:text="@string/login_loginButton_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_leftAndRight_margin"
+        android:layout_marginRight="@dimen/login_leftAndRight_margin"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="jumpForgetPassword"
+            android:text="@string/login_left_forgetPassword"
+            android:textColor="@color/login_textview_onclick_color" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/login_tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="jumpRegister"
+            android:text="@string/login_right_register"
+            android:textColor="@color/login_textview_onclick_color" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/login_bottom_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="@string/login_bottom_terms_text" />
+
+</LinearLayout>

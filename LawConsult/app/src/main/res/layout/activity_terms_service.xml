@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pxxy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/Terms_serviceActivity_customTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        pxxy:title_background="#25c4fc"
+        pxxy:title_leftTv_text="@string/Terms_serviceActivity_back"
+        pxxy:title_leftTv_textSize="18sp"
+        pxxy:title_leftTv_textColor="#ffffff"
+        pxxy:title_center_textView_text="@string/Terms_serviceActivity_title"
+        pxxy:title_center_textView_textColor="#ffffff"
+        pxxy:title_center_textView_textSize="18sp"
+        pxxy:title_leftButton_resource="@mipmap/terms_servicebreak" >
+    </com.pxxy.lawconsult.view.CustomTitleView>
+
+    <WebView
+        android:id="@+id/activity_terms_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

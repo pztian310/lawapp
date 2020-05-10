@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.AlterNickNameActivity">
+
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/alter_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_background="@color/theme_color"
+        app:title_center_textView_text="用户信息"
+        app:title_center_textView_textSize="20dp"
+        app:title_leftButton_resource="@mipmap/terms_servicebreak"
+        app:title_leftTv_text="返回"
+        app:title_leftTv_textSize="18sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/alter_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="昵&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;称:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/alter_nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/alter_tv_name"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/alter_tv_name"
+                android:background="@null"
+                android:hint="点击修改"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/alter_tv_name"
+                android:layout_marginTop="10dp"
+                android:background="#ededed" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/alter_tv_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="个性签名"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/alter_et_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/alter_tv_signature"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/alter_tv_signature"
+                android:background="@null"
+                android:hint="点击修改"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/alter_tv_signature"
+                android:layout_marginTop="10dp"
+                android:background="#ededed" />
+        </RelativeLayout>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_leftAndRight_margin"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/login_leftAndRight_margin"
+        android:background="@drawable/loign_activity_login_button"
+        android:minHeight="40dp"
+        android:onClick="alterTure"
+        android:text="确定修改"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

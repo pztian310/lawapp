@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fadeScrollbars="true"
+    tools:context=".activitys.ApplyLawyerActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.pxxy.lawconsult.view.CustomTitleView
+        android:id="@+id/Custom_casecollection_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_background="@color/theme_color"
+        app:title_center_textView_text="律师认证"
+        app:title_center_textView_textSize="20dp"
+        app:title_leftButton_resource="@mipmap/terms_servicebreak"
+        app:title_leftTv_text="返回"
+        app:title_leftTv_textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/applylawyet_tv_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="姓&#160;&#160;&#160;&#160;名"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/applylawyet_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/applylawyet_tv_name"
+            android:maxLines="1"
+            android:background="@null"
+            android:hint="请输入名字"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/applylawyet_tv_name"
+            android:layout_marginTop="5dp"
+            android:background="#ededed" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/applylawyet_tv_sex"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="性&#160;&#160;&#160;&#160;别"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/applylawyet_rg_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/applylawyet_tv_sex"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/apply_lawyer_rbtn_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/apply_lawyer_rbtn_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="女" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/applylawyet_tv_sex"
+            android:layout_marginTop="5dp"
+            android:background="#ededed" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/applylawyet_tv_age"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="年&#160;&#160;&#160;&#160;龄"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/applylawyet_et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/applylawyet_tv_age"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:digits="0123456789"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/applylawyet_tv_age"
+            android:layout_marginTop="5dp"
+            android:background="#ededed" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/applylawyet_tv_education"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="邮&#160;&#160;&#160;&#160;箱"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/applylawyet_et_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/applylawyet_tv_education"
+            android:background="@null"
+            android:maxLines="1"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/applylawyet_tv_education"
+            android:layout_marginTop="5dp"
+            android:background="#ededed" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/applylawyet_tv_unit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="所在单位"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/applylawyet_et_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/applylawyet_tv_unit"
+            android:background="@null"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/applylawyet_tv_unit"
+            android:layout_marginTop="5dp"
+            android:background="#ededed" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/applylawyet_tv_adpet"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="擅长类别"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/applylawyet_et_adpet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/applylawyet_tv_adpet"
+            android:hint="刑事诉讼"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/applylawyet_tv_adpet"
+            android:layout_marginTop="5dp"
+            android:background="#ededed" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/applylawyet_tv_num"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="律师编号"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/applylawyet_et_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/applylawyet_tv_num"
+            android:background="@null"
+            android:maxLines="1"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/applylawyet_tv_num"
+            android:layout_marginTop="5dp"
+            android:background="#ededed" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/applylawyet_tv_adress"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="所在单位"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/applylawyet_et_province"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/applylawyet_tv_adress"
+            android:background="@null"
+            android:maxLines="1"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/applylawyet_tv_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/applylawyet_et_province"
+            android:text="省"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/applylawyet_et_city"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:layout_toRightOf="@+id/applylawyet_tv_province"
+            android:background="@null"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/applylawyet_et_city"
+            android:text="市"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/applylawyet_et_province"
+            android:layout_marginTop="5dp"
+            android:background="#ededed" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/applylawyet_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:enabled="true"
+        android:gravity="top"
+        android:hint="填写个人资料"
+        android:inputType="textMultiLine"
+        android:maxLines="8"
+        android:minLines="8"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textCursorDrawable="@drawable/cursorcolor" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc" />
+
+    <Button
+        android:id="@+id/applylawyet_bt_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/loign_activity_login_button"
+        android:minHeight="40dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    </LinearLayout>
+
+</ScrollView>

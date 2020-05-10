@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F2F2F2"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/adapter_notice_activity_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22121212"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+    <RelativeLayout
+        android:id="@+id/adapter_notice_activity_layout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/admin_user_write_bg"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/adapter_notice_activity_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/lawconsult_icon"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/adapter_notice_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/adapter_notice_activity_photo"
+            android:text="法律咨询"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="18sp"
+            android:layout_alignTop="@id/adapter_notice_activity_photo"
+            android:layout_alignBottom="@id/adapter_notice_activity_photo"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/adapter_notice_activity_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/adapter_notice_activity_title"
+            android:text="seafaesfasefasefsafasefasfasef"
+            android:layout_below="@id/adapter_notice_activity_title"
+            android:ellipsize="end"
+            android:lines="3"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

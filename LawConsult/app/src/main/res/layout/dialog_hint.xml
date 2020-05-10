@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_write_bg"
+    >
+    
+    <TextView 
+        android:id="@+id/dialog_hint_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:text="登录失败"
+        />
+    
+    <TextView
+        android:id="@+id/dialog_hint_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="用户名或者密码错误"
+        android:layout_marginBottom="25dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#80E0E0E0"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/dialog_hint_left_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:background="@drawable/dialog_hint_button_selector"
+            />
+        <View
+            android:id="@+id/dialog_hint_center_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#50E0E0E0"
+            />
+        <Button
+            android:id="@+id/dialog_hint_right_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定"
+            android:background="@drawable/dialog_hint_button_selector"
+            />
+    </LinearLayout>
+
+</LinearLayout>
